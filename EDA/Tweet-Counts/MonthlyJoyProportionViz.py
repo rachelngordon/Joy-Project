@@ -45,7 +45,7 @@ plt.grid()
 plt.xticks(rotation=90)
 plt.yticks(np.arange(3, 10, step=.5))
 plt.subplots_adjust(bottom=0.5)
-plt.savefig('Figure2new.png')
+plt.savefig('Figure2.png')
 plt.show()
 
 # write dataframe to file as table
