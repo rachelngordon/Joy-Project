@@ -67,6 +67,20 @@ Add January 2022 total tweet count and joy tweet count to Total-Tweets-Per-Month
 Creates Figure 1 and Figure 2 graphs for the proportion of joy tweets per month. Also creates Figure2-Proportions table of values shown in the Figure 2 graph.
 
 
-## PCA
+## Emoji Analysis
 
 
+### Emoji.ipynb
+
+Create a bar graph and table showing the top ten most frequent emojis used in joy tweets compared to non-joy tweets.
+
+
+
+## Valence and Arousal
+
+
+### VAD.ipynb
+
+
+
+### Joy-VAD.ipynb
