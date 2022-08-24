@@ -62,6 +62,11 @@ Count the total number of tweets containing the word "joy" in each month and wri
 Add January 2022 total tweet count and joy tweet count to Total-Tweets-Per-Month.csv and Joy-Tweets-Per-Month.csv, respectively.
 
 
+### MonthlyJoyProportionViz.py
+
+Creates Figure 1 and Figure 2 graphs for the proportion of joy tweets per month. Also creates Figure2-Proportions table of values shown in the Figure 2 graph.
+
+
 ## PCA
 
 
