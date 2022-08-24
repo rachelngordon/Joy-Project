@@ -33,6 +33,8 @@ for m in months:
          'inReplyToTweetId', 'inReplyToUser', 'mentionedUsers', 'cashtags')
         for d in myElementDel:
             t.pop(d)
+        t['followers'] = t['user']['followersCount']
+        t['friends'] = t['user']['friendsCount']
         t['user'] = t['user']['displayname']
         t['place'] = t['place']['fullName']
         t['coordinates'] = [t['coordinates']['longitude'], t['coordinates']['latitude']]
@@ -63,4 +65,10 @@ for m in months:
     # query all joy tweets in the data and save to a new file
     df['ijoy'] = ijoy
     df_joy = df.query('ijoy == 1')
+    n_joy = len(df_joy.index)
     df_joy.to_csv('Joy-' + str(m[0]) + '-' + str(m[1]) + '.csv', mode = 'w' )
+
+    # take a sample of non-joy tweets equal in size to the number of joy tweets and save to a new file
+    df_other = df.query('ijoy == 0')
+    df_nojoy = df_other.sample(n = n_joy)
+    df_nojoy.to_csv('NoJoy-' + str(m[0]) + '-' + str(m[1]) + '.csv', mode = 'w' )
