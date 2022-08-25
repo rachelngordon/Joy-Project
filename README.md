@@ -1,5 +1,9 @@
 # Joy-Project
-Research project analyzing the use of joy on Twitter throughout the pandemic using NLP
+
+Research project analyzing the use of joy on Twitter throughout the pandemic using NLP.
+
+
+Word rankings for valence, arousal, and dominance were used for this analysis from the VAD Lexicon found here: https://saifmohammad.com/WebPages/nrc-vad.html#:~:text=The%20NRC%20Valence%2C%20Arousal%2C%20and%20Dominance%20(VAD)%20Lexicon,V%2FA%2FD).
 
 
 
@@ -76,11 +80,14 @@ Create a bar graph and table showing the top ten most frequent emojis used in jo
 
 
 
-## Valence and Arousal
+# Modeling
 
 
-### VAD.ipynb
+### VectorizerAndPCA.ipynb
+
+Perform principal component analysis using both sklearn's CountVectorizer and TfidfVectorizer when weighting the data for valence, arousal, and dominance to compare which vectorizer is best suited for the data. 
 
 
+### Bert_TM.ipynb
 
-### Joy-VAD.ipynb
+Perform topic modeling using the bertopic package on the data to identify 14 clusters of common topics.
