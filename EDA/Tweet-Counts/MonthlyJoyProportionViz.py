@@ -38,21 +38,21 @@ plt.show()
 
 # add title and axis names
 plt.plot(all.index, all['freq'], color='blue', marker='o', markersize = 3)
-plt.title('Figure 2: Proportion of Joy Tweets by Month (Line)')
+plt.title('Figure 2a: Proportion of Joy Tweets by Month')
 plt.xlabel('Month')
 plt.ylabel('Proportion of Joy Tweets (x10^-4)')
 plt.grid()
 plt.xticks(rotation=90)
 plt.yticks(np.arange(3, 10, step=.5))
 plt.subplots_adjust(bottom=0.5)
-plt.savefig('Figure2.png')
+plt.savefig('Figure2a.png')
 plt.show()
 
 # write dataframe to file as table
 all = all.rename(columns = {1: "Total Tweets", 'freq':"Joy Proportion (x10^-4)"})
 table = tabulate(all, headers='keys', tablefmt='psql')
 
-with open('Figure2-Proportions.txt', 'w') as f:
+with open('Figure2b-Proportions.txt', 'w') as f:
     f.write(table)
 
 
