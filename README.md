@@ -79,6 +79,17 @@ Creates Figure 1 and Figure 2 graphs for the proportion of joy tweets per month.
 Create a bar graph and table showing the top ten most frequent emojis used in joy tweets compared to non-joy tweets.
 
 
+## Valence and Arousal
+
+### Joy-VAD.ipynb
+
+Plot figures showing the valence and arousal for joy tweets and for non-joy tweets.
+
+### VAD.ipynb
+
+Plot figure demonstrating valence versus arousal for all the tweets.
+
+
 
 # Modeling
 
@@ -90,4 +101,9 @@ Perform principal component analysis using both sklearn's CountVectorizer and Tf
 
 ### Bert_TM.ipynb
 
-Perform topic modeling using the bertopic package on the data to identify 14 clusters of common topics.
+Perform topic modeling using the bertopic package on the data to identify 14 clusters of common topics. Output stored in Topics_Figs directory.
+
+
+### KMeans.ipynb
+
+Initial K-Means clustering attempts. Output stored in KMeans_Figs directory.
